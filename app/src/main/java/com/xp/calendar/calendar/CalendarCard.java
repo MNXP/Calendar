@@ -294,13 +294,13 @@ public class CalendarCard extends View {
      * @author wuwenjie
      */
     class Cell {
-        public CustomDate date;
-        public State state;
-        public int have;//0代表没数据1代表有数据
-        public int i;
-        public int j;
+        private CustomDate date;
+        private State state;
+        private int have;//0代表没数据1代表有数据
+        private int i;
+        private int j;
 
-        public Cell(CustomDate date, State state, int i, int j) {
+        private Cell(CustomDate date, State state, int i, int j) {
             super();
             this.date = date;
             this.state = state;
@@ -308,7 +308,7 @@ public class CalendarCard extends View {
             this.j = j;
         }
 
-        public Cell(CustomDate date, State state, int have, int i, int j) {
+        private Cell(CustomDate date, State state, int have, int i, int j) {
             super();
             this.date = date;
             this.state = state;
@@ -318,7 +318,7 @@ public class CalendarCard extends View {
         }
 
 
-        public void drawSelf(Canvas canvas) {
+        private void drawSelf(Canvas canvas) {
             switch (state) {
                 case CURRENT_MONTH_DAY: //当月
                     mTextPaint.setColor(Color.parseColor("#484848"));

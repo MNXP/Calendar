@@ -53,11 +53,11 @@ public class MainActivity extends AppCompatActivity implements CalendarCard.OnCe
     private void initData() {
         listDay = new ArrayList<>();
         for (int i = 1;i<5;i++){
-            Custom custom = new Custom(2016,7,i);
+            Custom custom = new Custom(2018,3,i);
             listDay.add(custom);
         }
         for (int i = 1;i<5;i++){
-            Custom custom = new Custom(2016,7+i,i);
+            Custom custom = new Custom(2018,3+i,i);
             listDay.add(custom);
         }
         views = new CalendarCard[6];
